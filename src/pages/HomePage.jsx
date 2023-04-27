@@ -11,20 +11,20 @@ const HomePage = () => {
                 <SootheSensesPara />
             </div>
             <div className="flex flex-col items-center justify-center space-y-5 ">
-                <CalenderCard path= "/nov" />
-                <CalenderCard path= "/dec" />
-                <CalenderCard path= "/jan" />
-                <CalenderCard path= "/feb" />
-                <CalenderCard path= "/mar" />
-                <CalenderCard path= "/apr" />
-                <CalenderCard path= "/may" />
-                <CalenderCard path= "/jun" />
-                <CalenderCard path= "/jul" />
-                <CalenderCard path= "/aug" />
-                <CalenderCard path= "/sep" />
-                <CalenderCard path= "/oct" />
-                <CalenderCard path= "/nov" />
-                <CalenderCard path= "/dec" />
+                <CalenderCard month = "November" path= "/nov" />
+                <CalenderCard month = "December"  path= "/dec" />
+                <CalenderCard month = "January"  path= "/jan" />
+                <CalenderCard month = "Febuary"  path= "/feb" />
+                <CalenderCard month = "March"  path= "/mar" />
+                <CalenderCard month = "April"  path= "/apr" />
+                <CalenderCard month = "May"  path= "/may" />
+                <CalenderCard month = "June"  path= "/jun" />
+                <CalenderCard month = "July"  path= "/jul" />
+                <CalenderCard month = "August"  path= "/aug" />
+                <CalenderCard month = "September"  path= "/sep" />
+                <CalenderCard month = "October"  path= "/oct" />
+                <CalenderCard month = "November"  path= "/nov" />
+                <CalenderCard month = "December"  path= "/dec" />
 
             </div>
         </div>
