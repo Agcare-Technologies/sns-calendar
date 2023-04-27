@@ -1,11 +1,16 @@
 import React from "react"
 import CalenderCard from "../components/CalenderCard";
+import LogoSafex from "../components/LogoSafex";
+import SootheSensesPara from "../components/SootheSensesPara";
 
 const HomePage = () => {
     return(
-        <div className="bg-sky-100">
-            <div>HomePage</div>
-            <div className="space-y-5">
+        <div className= "bg-green-100 ">
+            <div className="pt-20 space-y-5 text-center ">
+                <LogoSafex />
+                <SootheSensesPara />
+            </div>
+            <div className="flex flex-col items-center justify-center space-y-5 ">
                 <CalenderCard path= "/nov" />
                 <CalenderCard path= "/dec" />
                 <CalenderCard path= "/jan" />

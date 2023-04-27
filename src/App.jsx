@@ -24,7 +24,8 @@ function App() {
   return (
     
     <Routes>
-      <Route path = "/" element = {<HomePage /> } />
+      <Route exact path = "/" element = {<HomePage /> } />
+      <Route exact path = "/home" element = {<HomePage /> } />
       <Route path = "jan" element = {<January  /> } />
       <Route path = "feb" element = {<Febuary /> } />
       <Route path = "mar" element = {<March /> } />
