@@ -1,22 +1,24 @@
-import React from "react"
+import React from "react";
 import LogoSafex from "../components/LogoSafex";
 import SootheSensesPara from "../components/SootheSensesPara";
 import MonthTitle from "../components/MonthTitle";
 import BirdCard from "../components/BirdCard";
 
 const June = () => {
-    return(
-        <div className="bg-cyan-200">
-            <div className="pt-40 space-x-5 text-center">
-                <LogoSafex />
-                <MonthTitle title = "June 2024" />
-                <SootheSensesPara />
-                <div>
-                  <BirdCard />
-                </div>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className='h-screen bg-cyan-200 px-10'>
+      <div className='flex flex-col items-center justify-center pt-20 space-y-5 text-center'>
+        <LogoSafex />
+        <MonthTitle title='November 2023' />
+        <SootheSensesPara />
+      </div>
+      <div className='px-4 flex justify-end items-center space-x-6 sm:px-[50px] md:px-[100px]'>
+        <p>LA</p>
+        <BirdCard />
+        <p>RA</p>
+      </div>
+    </div>
+  );
+};
 
 export default June;
