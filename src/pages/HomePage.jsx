@@ -5,7 +5,7 @@ import SootheSensesPara from "../components/SootheSensesPara";
 
 const HomePage = () => {
     return(
-        <div className= "bg-green-100 ">
+        <div className= "bg-green-100 px-10 sm:px-[50px] md:px-[100px]">
             <div className="pt-20 space-y-5 text-center ">
                 <LogoSafex />
                 <SootheSensesPara />
