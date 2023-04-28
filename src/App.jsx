@@ -1,46 +1,33 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
-import HomePage from './pages/HomePage'
-import January from './pages/January'
-import March from './pages/March'
-import April from './pages/April'
-import May from './pages/May'
-import June from './pages/June'
-import July from './pages/July'
-import August from './pages/August'
-import September from './pages/September'
-import October from './pages/October'
-import November from './pages/November'
-import December from './pages/December'
-import Febuary from './pages/Febuary'
+import { useState } from "react";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
-
+import SinglePage from "./components/SinglePage";
 
 function App() {
   const [count, setCount] = useState(0);
   const navigate = useNavigate();
 
   return (
-    
     <Routes>
-      <Route exact path = "/" element = {<HomePage /> } />
-      <Route exact path = "/home" element = {<HomePage /> } />
-      <Route path = "jan" element = {<January  /> } />
-      <Route path = "feb" element = {<Febuary /> } />
-      <Route path = "mar" element = {<March /> } />
-      <Route path = "apr" element = {<April /> } />
-      <Route path = "may" element = {<May /> } />
-      <Route path = "jun" element = {<June /> } />
-      <Route path = "jul" element = {<July /> } />
-      <Route path = "aug" element = {<August /> } />
-      <Route path = "sep" element = {<September /> } />
-      <Route path = "oct" element = {<October /> } />
-      <Route path = "nov" element = {<November /> } />
-      <Route path = "dec" element = {<December /> } />
+      <Route exact path='/' element={<HomePage />} />
+      <Route exact path='/home' element={<HomePage />} />
+      <Route path='nov2023' element={<SinglePage title='November 2023' />} />
+      <Route path='dec2024' element={<SinglePage title='December 2023' />} />
+      <Route path='jan' element={<SinglePage title='January 2024' />} />
+      <Route path='feb' element={<SinglePage title='Febuary 2024' />} />
+      <Route path='mar' element={<SinglePage title='March 2024' />} />
+      <Route path='apr' element={<SinglePage title='April 2024' />} />
+      <Route path='may' element={<SinglePage title='May 2024' />} />
+      <Route path='jun' element={<SinglePage title='June 2024' />} />
+      <Route path='jul' element={<SinglePage title='July 2024' />} />
+      <Route path='aug' element={<SinglePage title='August 2024' />} />
+      <Route path='sep' element={<SinglePage title='September 2024' />} />
+      <Route path='oct' element={<SinglePage title='October 2024' />} />
+      <Route path='nov' element={<SinglePage title='November 2024' />} />
+      <Route path='dec' element={<SinglePage title='December 2024' />} />
     </Routes>
-    
-  )
+  );
 }
 
-export default App
+export default App;

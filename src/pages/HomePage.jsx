@@ -11,8 +11,8 @@ const HomePage = () => {
         <SootheSensesPara />
       </div>
       <div className='flex flex-col items-center justify-center space-y-5 '>
-        <CalenderCard month='November' path='/nov' />
-        <CalenderCard month='December' path='/dec' />
+        <CalenderCard month='November' path='/nov2023' />
+        <CalenderCard month='December' path='/dec2024' />
         <CalenderCard month='January' path='/jan' />
         <CalenderCard month='Febuary' path='/feb' />
         <CalenderCard month='March' path='/mar' />
