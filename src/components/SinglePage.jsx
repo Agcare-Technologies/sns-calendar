@@ -6,7 +6,7 @@ import MonthTitle from "../components/MonthTitle";
 import BirdCard from "../components/BirdCard";
 import { useNavigate, useNavigation } from "react-router-dom";
 
-const SinglePage = ({ title }) => {
+const SinglePage = ({ title, Image }) => {
   const navigation = useNavigate();
   return (
     <div className='h-screen px-2 bg-cyan-200'>
@@ -20,7 +20,7 @@ const SinglePage = ({ title }) => {
           LA
         </p>
         <div className='flex-1'>
-          <BirdCard />
+          <BirdCard Image='/mobile/background.png' />
         </div>
         <p onClick={() => navigation(+1)} className='flex-0'>
           RA

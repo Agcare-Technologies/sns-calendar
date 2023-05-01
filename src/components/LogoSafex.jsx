@@ -5,7 +5,7 @@ const LogoSafex = () => {
     <div>
       <img
         className='w-32 mx-auto'
-        src='/mobile-assests/safex_white.png'
+        src='/mobile/safex_white.png'
         alt='Safex Logo'
       />
     </div>

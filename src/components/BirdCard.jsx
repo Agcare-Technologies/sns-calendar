@@ -1,10 +1,10 @@
 import React from "react";
 
-const BirdCard = () => {
+const BirdCard = ({ Image }) => {
   return (
-    <div className='bg-gray-50 h-80 w-full'>
+    <div className='w-full bg-gray-50 h-80'>
       <p className='text-4xl'>BIRDS</p>
-      <img src='' alt='' />
+      <img src={Image} alt='' />
       <div>
         <audio src=''></audio>
       </div>

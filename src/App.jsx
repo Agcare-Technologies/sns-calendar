@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-
 import SinglePage from "./components/SinglePage";
 import NotFoundPage from "./pages/NotFoundPage";
 
