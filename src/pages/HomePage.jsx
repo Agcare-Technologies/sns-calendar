@@ -5,7 +5,13 @@ import SootheSensesPara from "../components/SootheSensesPara";
 
 const HomePage = () => {
   return (
-    <div className='bg-green-100 px-10 sm:px-[50px] md:px-[100px]'>
+    <div
+      style={{
+        backgroundImage: 'url("/mobile-assests/background.png")',
+        backgroundSize: "cover",
+      }}
+      className='px-10 sm:px-[50px] md:px-[100px]'
+    >
       <div className='pt-20 space-y-5 text-center '>
         <LogoSafex />
         <SootheSensesPara />
@@ -14,7 +20,7 @@ const HomePage = () => {
         <CalenderCard
           month='November'
           path='/nov2023'
-          img='/mobile-assests/Group 413.png'
+          img='/mobile/Group 413-nov.jpg'
         />
         <CalenderCard
           month='December'

@@ -1,12 +1,15 @@
-import React from "react"
+import React from "react";
 
 const LogoSafex = () => {
-    return(
-        <div>
-            <p>Safex Logo will come here</p>
-            <img src="" alt="" />
-        </div>
-    )
-}
+  return (
+    <div>
+      <img
+        className='w-32 mx-auto'
+        src='/mobile-assests/safex_white.png'
+        alt='Safex Logo'
+      />
+    </div>
+  );
+};
 
 export default LogoSafex;
