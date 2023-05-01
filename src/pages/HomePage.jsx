@@ -25,67 +25,64 @@ const HomePage = () => {
         <CalenderCard
           month='December'
           path='/dec2023'
-          img='/mobile-assests/Group 412.png'
+          img='/mobile/Group 412-dec.jpg'
         />
         <CalenderCard
           month='January'
           path='/jan'
-          img='/mobile-assests/Group 411.png'
+          img='/mobile/Group 411-jan.jpg'
         />
         <CalenderCard
           month='Febuary'
           path='/feb'
-          img='/mobile-assests/Group 410.png'
+          img='/mobile/Group 410-feb.jpg'
         />
         <CalenderCard
           month='March'
           path='/mar'
-          img='/mobile-assests/Group 409.png'
+          img='/mobile/Group 409-mar.jpg'
         />
         <CalenderCard
           month='April'
           path='/apr'
-          img='/mobile-assests/Group 408.png'
+          img='/mobile/Group 408-apr.jpg'
         />
-        <CalenderCard
-          month='May'
-          path='/may'
-          img='/mobile-assests/Group 407.png'
-        />
+        <CalenderCard month='May' path='/may' img='/mobile/Group 407-may.jpg' />
+
         <CalenderCard
           month='June'
           path='/jun'
-          img='/mobile-assests/Group 406.png'
+          img='/mobile/Group 406-june.jpg'
         />
         <CalenderCard
           month='July'
           path='/jul'
-          img='/mobile-assests/Group 405.png'
+          img='/mobile/Group 405-july.jpg'
         />
         <CalenderCard
           month='August'
           path='/aug'
-          img='/mobile-assests/Group 404.png'
+          img='/mobile/Group 404-aug.jpg'
         />
         <CalenderCard
           month='September'
           path='/sep'
-          img='/mobile-assests/Group 403.png'
+          img='/mobile/Group 403-sep.jpg'
         />
         <CalenderCard
           month='October'
           path='/oct'
-          img='/mobile-assests/Group 402.png'
+          img='/mobile/Group 402-oct.jpg'
         />
         <CalenderCard
           month='November'
           path='/nov'
-          img='/mobile-assests/Group 401.png'
+          img='/mobile/Group 401-nov.jpg'
         />
         <CalenderCard
           month='December'
           path='/dec'
-          img='/mobile-assests/Group 400.png'
+          img='/mobile/Group 400-dec.jpg'
         />
       </div>
     </div>
