@@ -20,7 +20,7 @@ const SinglePage = ({ title, Image }) => {
           LA
         </p>
         <div className='flex-1'>
-          <BirdCard Image='/mobile/background.png' />
+          <BirdCard />
         </div>
         <p onClick={() => navigation(+1)} className='flex-0'>
           RA
