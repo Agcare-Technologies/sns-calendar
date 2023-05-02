@@ -4,10 +4,13 @@ import LogoSafex from "../components/LogoSafex";
 import SootheSensesPara from "../components/SootheSensesPara";
 import MonthTitle from "../components/MonthTitle";
 import BirdCard from "../components/BirdCard";
-import { useNavigate, useNavigation } from "react-router-dom";
+import { useNavigate, useNavigation, useParams } from "react-router-dom";
+import { getMonthData } from "../data/months";
 
 const SinglePage = ({ title, Image }) => {
   const navigation = useNavigate();
+  const { month } = useParams();
+  const { current, next, previous } = getMonthData(month);
   return (
     <div className='h-screen px-2 bg-cyan-200'>
       <div className='flex flex-col items-center pt-20 space-y-5 text-center space-between'>
@@ -16,15 +19,15 @@ const SinglePage = ({ title, Image }) => {
         <SootheSensesPara />
       </div>
       <div className='flex justify-end space-x-2 items-center sm:px-[50px] md:px-[100px]'>
-        <p onClick={() => navigation(-1)} className='flex-0'>
+        <button onClick={() => navigation(previous?.path)} className='flex-0'>
           LA
-        </p>
+        </button>
         <div className='flex-1'>
           <BirdCard />
         </div>
-        <p onClick={() => navigation(+1)} className='flex-0'>
+        <button onClick={() => navigation(next?.path)} className='flex-0'>
           RA
-        </p>
+        </button>
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ export const months = [
     title: "November 2023",
     sm:'/mobile/Group 413-nov.jpg',
     xl:'/desktop/nov2023.jpg',
+    
   },
   {
     id: "dec2023",
@@ -125,3 +126,13 @@ export const months = [
    },
 
 ]
+
+export const getMonthData = (current) => {
+  const index = months.findIndex((month) => month.id === current);
+
+  return {
+    current: months[index],
+    previous: months[index - 1],
+    next: months[index + 1]
+  };
+};
