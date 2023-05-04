@@ -6,6 +6,7 @@ export const months = [
     title: "November 2023",
     sm:'/mobile/Group 413-nov.jpg',
     xl:'/desktop/nov2023.jpg',
+    audio: '/audio/audio.mp3'
     
   },
   {

@@ -6,6 +6,7 @@ import MonthTitle from "../components/MonthTitle";
 import BirdCard from "../components/BirdCard";
 import { useNavigate, useNavigation, useParams } from "react-router-dom";
 import { getMonthData } from "../data/months";
+import ReactAudioPlayer from "react-audio-player";
 
 const SinglePage = ({ title, Image }) => {
   const navigation = useNavigate();
@@ -24,6 +25,12 @@ const SinglePage = ({ title, Image }) => {
         </button>
         <div className='flex-1'>
           <BirdCard />
+          <ReactAudioPlayer
+            src='audio/audio.mp3'
+            loop={true}
+            autoPlay={true}
+            controls={true}
+          />
         </div>
         <button onClick={() => navigation(next?.path)} className='flex-0'>
           RA

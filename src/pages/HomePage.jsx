@@ -23,6 +23,9 @@ const HomePage = () => {
         <div className='pt-20 space-y-5 text-center '>
           <LogoSafex />
           <SootheSensesPara />
+          <p className='text-white text-[28px]'>
+            CALENDAR NOVEMBER 2023 - DECEMBER 2024
+          </p>
         </div>
         <div className='flex flex-col items-center justify-center space-y-5 '>
           {months.map((month) => (
