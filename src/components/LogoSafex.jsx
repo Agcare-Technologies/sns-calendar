@@ -3,7 +3,7 @@ import React from "react";
 const LogoSafex = () => {
   const css = `@media (max-width: 650px) {
     .safexLogo {
-        background-image: url("/mobile/background.png")
+        background-image: url("/mobile/safex_white.png")
     }
 }
 @media (min-width: 750px) {

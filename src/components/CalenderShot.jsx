@@ -1,14 +1,14 @@
 import React from "react";
 import cn from "classnames";
 
-const BirdCard = ({ birdImage, birdAudio, monthsImage, size }) => {
+const CalenderShot = ({ birdImage, birdAudio, monthsImage, size }) => {
   const sizeclasses = cn("bg-gray-100", {
-    "2xl:w-[1416px] 2xl:h-[1192px]": size === "big",
+    "2xl:w-[1416px] 2xl:h-[708px]": size === "big",
     "text-[30px] uppercase": size === "small",
   });
   return (
     <div className={sizeclasses}>
-      <p className='text-4xl'>BIRDS CARD</p>
+      <p className='text-4xl'>CALENDER SHOT</p>
       <img src={birdImage} alt='' />
       <div className='h-20 '></div>
       <div>
@@ -18,4 +18,4 @@ const BirdCard = ({ birdImage, birdAudio, monthsImage, size }) => {
   );
 };
 
-export default BirdCard;
+export default CalenderShot;

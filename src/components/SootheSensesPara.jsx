@@ -1,11 +1,13 @@
 import React from "react";
-
-const SootheSensesPara = () => {
+import cn from "classnames";
+const SootheSensesPara = ({ size }) => {
+  const sizeclasses = cn('text-white font-["Times_New_Roman"] ', {
+    "text-[122px]": size === "big",
+    "text-[30px] uppercase": size === "small",
+  });
   return (
     <div>
-      <p className='2xl:text-[110px] text-white font-serif font-normal '>
-        to soothe your senses
-      </p>
+      <p className={sizeclasses}>to soothe your senses</p>
     </div>
   );
 };
