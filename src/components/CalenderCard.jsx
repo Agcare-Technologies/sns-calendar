@@ -7,7 +7,7 @@ const CalenderCard = ({ month }) => {
   return (
     <div
       onClick={() => navigate(month.path)}
-      className='flex items-center justify-center w-full h-24 max-w-2xl bg-cover sm:h-40'
+      className='flex items-center justify-center 2xl:w-[1042px] 2xl:h-[300px]'
     >
       <img
         className='w-full h-24 sm:h-40 sm:hidden'
@@ -17,7 +17,7 @@ const CalenderCard = ({ month }) => {
         effect='blur'
       />
       <img
-        className='hidden w-full h-24 sm:h-40 sm:block'
+        className='hidden 2xl:w-[1042px] 2xl:h-[300px] sm:block'
         src={month.xl}
         alt=''
         loading='lazy'

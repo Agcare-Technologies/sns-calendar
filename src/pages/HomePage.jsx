@@ -20,10 +20,10 @@ const HomePage = () => {
     <div>
       <style scoped>{css}</style>
       <div className='px-10 sm:px-[50px] md:px-[100px] bg-cover backimage'>
-        <div className='pt-20 space-y-5 text-center '>
+        <div className='2xl:pt-[256px] space-y-4 text-center '>
           <LogoSafex />
           <SootheSensesPara />
-          <p className='text-white text-[28px]'>
+          <p className='text-white text-[30px] font-medium'>
             CALENDAR NOVEMBER 2023 - DECEMBER 2024
           </p>
         </div>
