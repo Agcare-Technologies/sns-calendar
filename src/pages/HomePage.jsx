@@ -3,6 +3,7 @@ import CalenderCard from "../components/CalenderCard";
 import LogoSafex from "../components/LogoSafex";
 import SootheSensesPara from "../components/SootheSensesPara";
 import { months } from "../data/months";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   const css = `@media (max-width: 650px) {
@@ -20,7 +21,7 @@ const HomePage = () => {
     <div>
       <style scoped>{css}</style>
       <div className='px-10 sm:px-[50px] md:px-[100px] bg-cover backimage'>
-        <div className='2xl:pt-[256px] space-y-4 text-center '>
+        <div className='xl:pt-[256px] space-y-4 text-center '>
           <LogoSafex />
           <SootheSensesPara size='big' />
           <p className='text-white text-[30px] py-10 font-["Helvetica_Neue"] tracking-[3px] font-medium'>
@@ -31,6 +32,9 @@ const HomePage = () => {
           {months.map((month) => (
             <CalenderCard month={month} key={month.id} />
           ))}
+        </div>
+        <div className='py-40'>
+          <Footer />
         </div>
       </div>
     </div>

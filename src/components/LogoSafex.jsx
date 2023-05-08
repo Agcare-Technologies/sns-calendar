@@ -16,7 +16,7 @@ const LogoSafex = () => {
       <style scoped>{css}</style>
       <div>
         <img
-          className='mx-auto 2xl:w-[229px] 2xl:h-[122px]'
+          className='mx-auto xl:w-[229px] xl:h-[122px]'
           src='/mobile/safex_white.png'
           alt='Safex Logo'
         />

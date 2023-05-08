@@ -1,7 +1,7 @@
 import React from "react";
 import cn from "classnames";
 
-const CalenderShot = ({ birdImage, birdAudio, monthsImage, size }) => {
+const CalenderShot = ({ birdImage, monthsImage, size }) => {
   const sizeclasses = cn("bg-gray-100", {
     "2xl:w-[1416px] 2xl:h-[708px]": size === "big",
     "text-[30px] uppercase": size === "small",
