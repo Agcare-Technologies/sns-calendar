@@ -1,7 +1,13 @@
 import React from "react";
 
 const LogoSafex = () => {
-  const css = `@media (max-width: 650px) {
+  <img className='w-40 h-40' src='/mobile/safex_white.png' alt='Safex LOGO' />;
+};
+
+export default LogoSafex;
+
+/*
+ const css = `@media (max-width: 650px) {
     .safexLogo {
         background-image: url("/mobile/safex_white.png")
     }
@@ -23,6 +29,4 @@ const LogoSafex = () => {
       </div>
     </div>
   );
-};
-
-export default LogoSafex;
+  */

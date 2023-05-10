@@ -11,6 +11,8 @@ module.exports = {
         "sm-dec": "url('mobile/Group 412-dec.jpg')",
         "xl-dec": "url('desktop/Group 387.png')",
         "xl-home": "url('/desktop/bg-desktop.jpg')",
+        "xs-home": "url('/mobile/background.png')",
+        "xs-logo": "url('/mobile/safex_white.png')"
       }
     },
   },

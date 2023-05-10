@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ShowAll = () => {
   return (
-    <p className='text-white text-[37px] underline underline-offset-8 border-white'>
+    <p className='text-white text-[37px] hidden sm:block underline underline-offset-8 border-white'>
       <Link to='/home'>SHOW ALL</Link>
     </p>
   );

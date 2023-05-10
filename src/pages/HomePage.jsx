@@ -1,30 +1,23 @@
 import React from "react";
 import CalenderCard from "../components/CalenderCard";
-import LogoSafex from "../components/LogoSafex";
+
 import SootheSensesPara from "../components/SootheSensesPara";
 import { months } from "../data/months";
 import Footer from "../components/Footer";
+import LogoSafex from "../components/LogoSafex";
 
 const HomePage = () => {
-  const css = `@media (max-width: 650px) {
-    .backimage {
-        background-image: url("/mobile/background.png")
-    }
-}
-@media (min-width: 750px) {
-    .backimage {
-        background-image: url("/desktop/bg-desktop.jpg");
-    }
-}`;
-
   return (
     <div>
-      <style scoped>{css}</style>
-      <div className='px-10 sm:px-[50px] md:px-[100px] bg-cover backimage'>
-        <div className='xl:pt-[256px] space-y-4 text-center '>
-          <LogoSafex />
-          <SootheSensesPara size='big' />
-          <p className='text-white text-[30px] py-10 font-["Helvetica_Neue"] tracking-[3px] font-medium'>
+      <div className='px-10 sm:px-[50px] md:px-[100px] bg-cover bg-xs-home sm:bg-xl-home'>
+        <div className='xl:pt-[256px] pt-16 text-center space-y-1'>
+          <img
+            className='w-[110px] mx-auto'
+            src='/mobile/safex_white.png'
+            alt=''
+          />
+          <SootheSensesPara />
+          <p className='text-white text-[11.2px] uppercase font-medium tracking-[1.12px] font-["Helvetica_Neue_Medium"] '>
             CALENDAR NOVEMBER 2023 - DECEMBER 2024
           </p>
         </div>

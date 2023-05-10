@@ -7,42 +7,35 @@ import BirdCard from "../components/BirdCard";
 import ReactAudioPlayer from "react-audio-player";
 import { useNavigate } from "react-router";
 import CalenderShot from "../components/CalenderShot";
+import { AiOutlineLeft } from "react-icons/ai";
+import { AiOutlineRight } from "react-icons/ai";
 
 const Nov2023 = () => {
   const navigate = useNavigate();
   return (
-    <div className='pb-20 text-center bg-no-repeat bg-cover bg-xl-home bg-home sm:px-20'>
-      <div className='pt-[300px] text-center space-y-16'>
-        <div>
-          <LogoSafex />
-        </div>
-        <div className='flex items-center justify-between text-center'>
-          <button onClick={() => navigate("/home")} className='flex-0'>
-            LA
-          </button>
-          <MonthTitle title='November 2023' />
-          <button onClick={() => navigate("/dec2023")} className='flex-0'>
-            RA
-          </button>
-        </div>
-        <div>
-          <SootheSensesPara size='small' />
-        </div>
+    <div className='pb-20 text-center bg-no-repeat bg-cover bg-xl-home sm:px-20'>
+      <div className='xl:pt-[300px] pt-[48.88px] text-center'>
+        <img className='w-[96px] mx-auto' src='mobile/safex_white.png' alt='' />
+
+        <MonthTitle title='November 2023' />
+        <p className='text-[12px] uppercase tracking-[1.2px] text-white font-["Helvetica_Neue_Medium"]'>
+          to soothe your senses
+        </p>
       </div>
-      <div className='flex justify-center pt-20'>
-        <BirdCard size='big' />
+      <div className='flex justify-center py-6 space-x-2'>
+        <button onClick={() => navigate("/home")} className='flex-0'>
+          <AiOutlineLeft color='#FDFDFD' size={30} className='font-bold' />
+        </button>
+        <BirdCard />
+        <button onClick={() => navigate("/dec2023")} className='flex-0'>
+          <AiOutlineRight color='#FDFDFD' size={30} />
+        </button>
       </div>
-      <div className='flex justify-center'>
-        <ReactAudioPlayer
-          className='w-[800px] h-20'
-          src='audio/audio.mp3'
-          loop={true}
-          autoPlay={true}
-          controls={true}
-        />
-      </div>
-      <div className='flex justify-center pt-20 pb-32'>
-        <CalenderShot size='big' />
+
+      <div className='flex justify-center pb-20 px-[30px] space-x-2'>
+        <span></span>
+        <CalenderShot />
+        <span></span>
       </div>
       <ShowAll />
     </div>
@@ -79,3 +72,15 @@ export default Nov2023;
       </div>
     </div>
     */
+
+/*
+    <div className='flex items-center justify-between text-center'>
+          <button onClick={() => navigate("/home")} className='flex-0'>
+            LA
+          </button>
+          <MonthTitle title='November 2023' />
+          <button onClick={() => navigate("/dec2023")} className='flex-0'>
+            RA
+          </button>
+        </div>
+        */
