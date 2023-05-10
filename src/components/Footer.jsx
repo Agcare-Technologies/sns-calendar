@@ -6,30 +6,30 @@ import { FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <div className='flex items-center content-center justify-between py-4 place-items-center justify-items-center'>
+      <div className='flex items-center content-center justify-between py-4 border-t-2 border-white place-items-center justify-items-center'>
         <div>
-          <LogoSafex />
+          <img className='w-[72px]' src='/mobile/safex_white.png' alt='' />
         </div>
         <div>
-          <div className='flex space-x-6'>
+          <div className='flex space-x-1'>
             <a href=''>
-              <ImFacebook size={50} className='p-2 m-1 bg-white rounded-xl' />
+              <ImFacebook size={20} className='p-1 m-1 bg-white rounded-md' />
             </a>
             <a href=''>
               <RiLinkedinFill
-                size={50}
-                className='p-2 m-1 bg-white rounded-xl'
+                size={20}
+                className='p-1 m-1 bg-white rounded-md'
               />
             </a>
             <a href=''>
-              <FaYoutube size={50} className='p-2 m-1 bg-white rounded-xl' />
+              <FaYoutube size={20} className='p-1 m-1 bg-white rounded-md' />
             </a>
           </div>
         </div>
       </div>
-      <div className='text-[25px] flex justify-between text-white font-["TIMES_NEW_ROMAN"] space-y-2'>
-        <p>VISIT OUR WEBSITE</p>
-        <p>FOLLOW US AT</p>
+      <div className='text-[25px] sm:flex justify-between hidden  text-white font-["TIMES_NEW_ROMAN"] space-y-2'>
+        <p className=''>VISIT OUR WEBSITE</p>
+        <p className=''>FOLLOW US AT</p>
       </div>
     </div>
   );

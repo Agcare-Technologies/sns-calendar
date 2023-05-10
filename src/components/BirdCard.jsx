@@ -3,9 +3,14 @@ import cn from "classnames";
 
 const BirdCard = ({ birdImage, birdAudio, monthsImage, size }) => {
   return (
-    <div className='w-full bg-[#F7F7F7] h-[325px]'>
-      <p className='text-4xl'>BIRDS CARD</p>
-      <img src={birdImage} alt='' />
+    <div className='w-full bg-[#f7f7f7] bg-opacity-60  backdrop-filter  h-[225px]'>
+      <div>
+        <img
+          className='z-50 bg-contain opacity-100 bg-inherit'
+          src={birdImage}
+          alt=''
+        />
+      </div>
     </div>
   );
 };

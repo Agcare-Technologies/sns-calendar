@@ -26,7 +26,7 @@ const Nov2023 = () => {
         <button onClick={() => navigate("/home")} className='flex-0'>
           <AiOutlineLeft color='#FDFDFD' size={30} className='font-bold' />
         </button>
-        <BirdCard />
+        <BirdCard birdImage={"/birds/dec-2023.png"} />
         <button onClick={() => navigate("/dec2023")} className='flex-0'>
           <AiOutlineRight color='#FDFDFD' size={30} />
         </button>

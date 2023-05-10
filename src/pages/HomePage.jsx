@@ -26,7 +26,7 @@ const HomePage = () => {
             <CalenderCard month={month} key={month.id} />
           ))}
         </div>
-        <div className='py-40'>
+        <div className='py-16'>
           <Footer />
         </div>
       </div>
