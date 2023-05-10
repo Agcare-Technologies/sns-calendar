@@ -6,33 +6,36 @@ import MonthTitle from "../components/MonthTitle";
 import BirdCard from "../components/BirdCard";
 import ReactAudioPlayer from "react-audio-player";
 import { useNavigate } from "react-router";
-
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import CalenderShot from "../components/CalenderShot";
 const Dec2024 = () => {
   const navigate = useNavigate();
   return (
-    <div className='h-screen px-2 bg-cyan-200'>
-      <div className='flex flex-col items-center pt-20 space-y-5 text-center space-between'>
-        <LogoSafex />
-        <MonthTitle />
-        <SootheSensesPara />
+    <div className='pb-20 text-center bg-no-repeat bg-cover bg-xl-home sm:px-20'>
+      <div className='xl:pt-[300px] pt-[48.88px] text-center'>
+        <img className='w-[96px] mx-auto' src='mobile/safex_white.png' alt='' />
+
+        <MonthTitle title='Decemeber 2024' />
+        <p className='text-[12px] uppercase tracking-[1.2px] text-white font-["Helvetica_Neue_Medium"]'>
+          to soothe your senses
+        </p>
       </div>
-      <div className='flex justify-end space-x-2 items-center sm:px-[50px] md:px-[100px]'>
+      <div className='flex justify-center py-6 space-x-2'>
         <button onClick={() => navigate("/nov")} className='flex-0'>
-          LA
+          <AiOutlineLeft color='#FDFDFD' size={30} className='font-bold' />
         </button>
-        <div className='flex-1'>
-          <BirdCard />
-          <ReactAudioPlayer
-            src='audio/audio.mp3'
-            loop={true}
-            autoPlay={true}
-            controls={true}
-          />
-        </div>
+        <BirdCard birdImage={"/birds/dec.png"} />
         <button onClick={() => navigate("/home")} className='flex-0'>
-          RA
+          <AiOutlineRight color='#FDFDFD' size={30} />
         </button>
       </div>
+
+      <div className='flex justify-center pb-20 px-[30px] space-x-2'>
+        <span></span>
+        <CalenderShot />
+        <span></span>
+      </div>
+      <ShowAll />
     </div>
   );
 };
