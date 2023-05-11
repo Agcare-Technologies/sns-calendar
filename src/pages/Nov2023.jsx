@@ -9,6 +9,7 @@ import { useNavigate } from "react-router";
 import CalenderShot from "../components/CalenderShot";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { BackgroundImage } from "react-image-and-background-image-fade";
+import AudioPlayer from "../components/AudioPlayer";
 
 const Nov2023 = () => {
   const navigate = useNavigate();
@@ -26,11 +27,14 @@ const Nov2023 = () => {
           to soothe your senses
         </p>
       </div>
-      <div className='flex justify-center py-6 space-x-2'>
+      <div className='flex justify-center pt-6 space-x-2'>
         <button onClick={() => navigate("/home")} className='flex-0'>
           <AiOutlineLeft color='#FDFDFD' size={30} className='font-bold' />
         </button>
-        <BirdCard birdImage={"/birds/nov-2023.png"} />
+        <BirdCard
+          birdImage={"/birds/nov-2023.png"}
+          birdName='Indian Paradise Fly Catcher'
+        />
         <button onClick={() => navigate("/dec2023")} className='flex-0'>
           <AiOutlineRight color='#FDFDFD' size={30} />
         </button>

@@ -2,10 +2,12 @@ import React from "react";
 import cn from "classnames";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import AudioPlayer from "./AudioPlayer";
+import audio from "/audio/audio.mp3";
 
-const BirdCard = ({ birdImage, birdAudio, monthsImage, size }) => {
+const BirdCard = ({ birdImage, birdAudio, birdName, size }) => {
   return (
-    <div className='w-full bg-[#f7f7f7] bg-opacity-60  backdrop-filter  h-[225px]'>
+    <div className='w-full bg-[#f7f7f7] bg-opacity-60  backdrop-filter  h-[340px]'>
       <div>
         <LazyLoadImage
           effect='blur'
@@ -14,6 +16,12 @@ const BirdCard = ({ birdImage, birdAudio, monthsImage, size }) => {
           alt=''
           loading='lazy'
         />
+      </div>
+      <div>
+        <h3 className="text-[20px] font-['Times_New_Roman']">{birdName}</h3>
+      </div>
+      <div className='px-2'>
+        <AudioPlayer song={audio} />
       </div>
     </div>
   );
