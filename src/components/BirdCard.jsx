@@ -1,14 +1,18 @@
 import React from "react";
 import cn from "classnames";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const BirdCard = ({ birdImage, birdAudio, monthsImage, size }) => {
   return (
     <div className='w-full bg-[#f7f7f7] bg-opacity-60  backdrop-filter  h-[225px]'>
       <div>
-        <img
+        <LazyLoadImage
+          effect='blur'
           className='z-50 bg-contain opacity-100 bg-inherit'
           src={birdImage}
           alt=''
+          loading='lazy'
         />
       </div>
     </div>

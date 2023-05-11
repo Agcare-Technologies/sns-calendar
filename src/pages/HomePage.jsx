@@ -5,11 +5,16 @@ import SootheSensesPara from "../components/SootheSensesPara";
 import { months } from "../data/months";
 import Footer from "../components/Footer";
 import LogoSafex from "../components/LogoSafex";
+import { BackgroundImage } from "react-image-and-background-image-fade";
 
 const HomePage = () => {
   return (
-    <div>
-      <div className='px-10 sm:px-[50px] md:px-[100px] bg-cover bg-xs-home sm:bg-xl-home'>
+    <BackgroundImage
+      className='px-10 sm:px-[50px] md:px-[100px] bg-cover'
+      src='/mobile/background.png'
+      lazyLoad
+    >
+      <div className=''>
         <div className='xl:pt-[256px] pt-16 text-center space-y-1'>
           <img
             className='w-[110px] mx-auto'
@@ -30,7 +35,7 @@ const HomePage = () => {
           <Footer />
         </div>
       </div>
-    </div>
+    </BackgroundImage>
   );
 };
 
