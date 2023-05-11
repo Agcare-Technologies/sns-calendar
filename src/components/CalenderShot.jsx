@@ -1,10 +1,12 @@
 import React from "react";
 import cn from "classnames";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
-const CalenderShot = ({ birdImage, monthsImage, size }) => {
+const CalenderShot = ({ dates }) => {
   return (
-    <div className='w-full bg-[#F7F7F7] h-[325px]'>
-      <img src={birdImage} alt='' />
+    <div className='w-full h-[325px]'>
+      <LazyLoadImage effect='blur' src={dates} alt='' />
     </div>
   );
 };

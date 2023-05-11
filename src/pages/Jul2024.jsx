@@ -38,7 +38,7 @@ const Jul2024 = () => {
 
       <div className='flex justify-center pb-20 px-[30px] space-x-2'>
         <span></span>
-        <CalenderShot />
+        <CalenderShot dates='dates/july.png' />
         <span></span>
       </div>
       <ShowAll />
