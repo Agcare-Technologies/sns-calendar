@@ -9,7 +9,6 @@ import { useNavigate } from "react-router";
 import CalenderShot from "../components/CalenderShot";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { BackgroundImage } from "react-image-and-background-image-fade";
-import AudioPlayer from "../components/AudioPlayer";
 
 const Nov2023 = () => {
   const navigate = useNavigate();
