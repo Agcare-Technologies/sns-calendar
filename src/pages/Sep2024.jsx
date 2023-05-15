@@ -30,7 +30,10 @@ const Sep2024 = () => {
         <button onClick={() => navigate("/aug")} className='flex-0'>
           <AiOutlineLeft color='#FDFDFD' size={30} className='font-bold' />
         </button>
-        <BirdCard birdImage={"/birds/sep.png"} birdName='test test test' />
+        <BirdCard
+          birdImage={"/mobile/mobile-birds/sep.png"}
+          birdName='test test test'
+        />
         <button onClick={() => navigate("/oct")} className='flex-0'>
           <AiOutlineRight color='#FDFDFD' size={30} />
         </button>

@@ -31,7 +31,7 @@ const Nov2023 = () => {
           <AiOutlineLeft color='#FDFDFD' size={30} className='font-bold' />
         </button>
         <BirdCard
-          birdImage={"/birds/nov-2023.png"}
+          birdImage={"/mobile/mobile-birds/nov-2023.png"}
           birdName='Indian Paradise Fly Catcher'
         />
         <button onClick={() => navigate("/dec2023")} className='flex-0'>
