@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AudioPlayer from "../components/AudioPlayer";
-import audio from "/audio/audio.mp3";
 
 const NotFoundPage = () => {
   return (
@@ -14,7 +12,6 @@ const NotFoundPage = () => {
           <Link to='/home'>Home</Link>
         </span>
       </div>
-      <AudioPlayer song={audio} />
     </div>
   );
 };
