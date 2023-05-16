@@ -5,7 +5,6 @@ import BirdCard from "../components/BirdCard";
 import { useNavigate } from "react-router";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import CalenderShot from "../components/CalenderShot";
-import { BackgroundImage } from "react-image-and-background-image-fade";
 
 const Mar2024 = () => {
   const navigate = useNavigate();
