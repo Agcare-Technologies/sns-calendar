@@ -1,10 +1,10 @@
 import React from "react";
-import cn from "classnames";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import AudioPlayer from "./AudioPlayer";
+import { useRef, useEffect } from "react";
 
-const BirdCard = ({ birdImage, song, birdName, size }) => {
+const BirdCard = ({ birdImage, song, birdName }) => {
   return (
     <div className='w-full bg-[#f7f7f7] bg-opacity-60  backdrop-filter  h-[340px]'>
       <div>

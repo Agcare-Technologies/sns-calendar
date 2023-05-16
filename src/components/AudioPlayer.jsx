@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import useSound from "use-sound"; // for handling the sound
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // icons for play and pause
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // icons for next and previous track
@@ -46,8 +46,23 @@ const AudioPlayer = ({ song }) => {
     return () => clearInterval(interval);
   }, [sound]);
 
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    const handleUnload = () => {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+      setIsPlaying(false);
+    };
+
+    window.addEventListener("beforeunload", handleUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleUnload);
+    };
+  }, [song]);
   return (
-    <div className='items-center mx-auto text-center'>
+    <div ref={audioRef} className='items-center mx-auto text-center'>
       <div>
         {!isPlaying ? (
           <button className='playButton' onClick={playingButton}>

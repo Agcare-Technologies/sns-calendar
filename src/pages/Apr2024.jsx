@@ -5,6 +5,7 @@ import BirdCard from "../components/BirdCard";
 import { useNavigate } from "react-router";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import CalenderShot from "../components/CalenderShot";
+import audio from "/audio/apr.mp3";
 
 const Apr2024 = () => {
   const navigate = useNavigate();
@@ -25,13 +26,14 @@ const Apr2024 = () => {
         <BirdCard
           birdImage={"/mobile/mobile-birds/apr.png"}
           birdName='Test test test'
+          song={audio}
         />
         <button onClick={() => navigate("/may")} className='flex-0'>
           <AiOutlineRight color='#FDFDFD' size={30} />
         </button>
       </div>
 
-      <div className='flex justify-center pb-20 px-[30px] space-x-2'>
+      <div className='flex justify-center pb-10 px-[30px] space-x-2'>
         <span></span>
         <CalenderShot dates='/dates/april.png' />
         <span></span>
