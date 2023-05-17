@@ -3,11 +3,32 @@ import useSound from "use-sound"; // for handling the sound
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // icons for play and pause
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // icons for next and previous track
 import { IconContext } from "react-icons";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const AudioPlayer = ({ song }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [play, { pause, duration, sound }] = useSound(song);
+  const [play, { pause, duration, sound, stop }] = useSound(song, {
+    volume: 1,
+    loop: true,
+    autoplay: true,
+  });
   const [seconds, setSeconds] = useState();
+  const location = useLocation();
+  useEffect(() => {
+    play();
+
+    const handleRouteChange = () => {
+      stop();
+    };
+
+    // Listen for the route change event
+    window.addEventListener("beforeunload", handleRouteChange);
+
+    return () => {
+      stop();
+      window.removeEventListener("beforeunload", handleRouteChange);
+    };
+  }, [location.pathname, play, stop]);
 
   const playingButton = () => {
     if (isPlaying) {
@@ -48,19 +69,22 @@ const AudioPlayer = ({ song }) => {
 
   const audioRef = useRef(null);
 
-  useEffect(() => {
+  /* useEffect(() => {
     const handleUnload = () => {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
-      setIsPlaying(false);
     };
 
     window.addEventListener("beforeunload", handleUnload);
 
     return () => {
+      stop();
+      // audioRef.current.pause();
+      // audioRef.current.currentTime = 0;
       window.removeEventListener("beforeunload", handleUnload);
     };
-  }, [song]);
+  }, []);*/
+
   return (
     <div ref={audioRef} className='items-center mx-auto text-center'>
       <div>
