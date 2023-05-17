@@ -6,7 +6,7 @@ import { IconContext } from "react-icons";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const AudioPlayer = ({ song }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const [play, { pause, duration, sound, stop }] = useSound(song, {
     volume: 1,
     loop: true,
@@ -88,17 +88,18 @@ const AudioPlayer = ({ song }) => {
   return (
     <div ref={audioRef} className='items-center mx-auto text-center'>
       <div>
-        {!isPlaying ? (
-          <button className='playButton' onClick={playingButton}>
-            <IconContext.Provider value={{ size: "40px", color: "#28332B" }}>
-              <AiFillPlayCircle />
-            </IconContext.Provider>
-          </button>
-        ) : (
+        {isPlaying ? (
           <button className='playButton' onClick={playingButton}>
             <IconContext.Provider value={{ size: "40px", color: "#28332B" }}>
               <AiFillPauseCircle />
             </IconContext.Provider>
+          </button>
+        ) : (
+          <button className='playButton' onClick={playingButton}>
+            {" "}
+            <IconContext.Provider value={{ size: "40px", color: "#28332B" }}>
+              <AiFillPlayCircle />{" "}
+            </IconContext.Provider>{" "}
           </button>
         )}
       </div>
