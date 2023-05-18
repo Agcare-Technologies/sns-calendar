@@ -47,6 +47,3 @@ function App() {
 }
 
 export default App;
-/*
-<Route exact path='/' element={<HomePage />} />
-      <Route exact path='/home' element={<HomePage />} />*/
