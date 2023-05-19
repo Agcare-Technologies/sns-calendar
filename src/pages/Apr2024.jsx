@@ -25,7 +25,8 @@ const Apr2024 = () => {
         </button>
         <BirdCard
           birdImage={"/mobile/mobile-birds/apr.png"}
-          birdName='Test test test'
+          birdName='Fired Tailed Myzornis'
+          artist='Recorded by Jelle Scharringa'
           song={audio}
         />
         <button onClick={() => navigate("/may")} className='flex-0'>

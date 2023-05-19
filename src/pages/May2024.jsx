@@ -26,6 +26,7 @@ const May2024 = () => {
         <BirdCard
           birdImage={"/mobile/mobile-birds/may.png"}
           birdName='Indian Cuckoo'
+          artist='Recorded by David Edwards'
           song={audio}
         />
         <button onClick={() => navigate("/jun")} className='flex-0'>

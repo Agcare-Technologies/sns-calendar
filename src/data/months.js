@@ -129,7 +129,7 @@ export const months = [
 ]
 
 export const getMonthData = (current) => {
-  const index = months.findIndex((month) => month.id === current);
+  const index = months.findIndex((months) => months.id === current);
 
   return {
     current: months[index],

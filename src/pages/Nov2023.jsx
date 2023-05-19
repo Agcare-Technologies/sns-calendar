@@ -27,6 +27,7 @@ const Nov2023 = () => {
           birdImage={"/mobile/mobile-birds/nov-2023.png"}
           birdName='Indian Paradise Fly Catcher'
           song={audio}
+          artist='Recorded by Conrad Pinto'
         />
         <button onClick={() => navigate("/dec2023")} className='flex-0'>
           <AiOutlineRight color='#FDFDFD' size={30} />

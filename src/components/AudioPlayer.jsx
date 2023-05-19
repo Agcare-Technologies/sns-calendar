@@ -114,7 +114,7 @@ const AudioPlayer = ({ song }) => {
           max={duration / 1000}
           default='0'
           value={seconds}
-          className='accent-[#28332B] flex-1'
+          className='accent-[#28332B] flex-1 font-[3px] h-1'
           onChange={(e) => {
             sound.seek([e.target.value]);
           }}
