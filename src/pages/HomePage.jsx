@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
-    <div className='px-10 sm:px-[50px] md:px-[100px] bg-xs-home bg-cover'>
+    <div className='px-10 sm:px-[50px] md:px-[100px] bg-xxs-bg bg-cover'>
       <div className=''>
         <div className='xl:pt-[256px] pt-16 text-center space-y-1'>
           <img

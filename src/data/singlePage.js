@@ -149,18 +149,9 @@ export const singlePage = [
         monthTitle: "December 2024",
         birdImage: "/mobile/mobile-birds/dec.png",
         birdName: "Himalayan Shrike-Babbler",
-        artistName: "Himalayan Shrike-Babbler",
+        artistName: "Recorded by Peter Boesman",
        song: {dec},
         dates: "/dates/dec.png"
     },
 ]
 
-export const getMonthData = (current) => {
-  const index = singlePage.findIndex((singlePage) => singlePage.id === current);
-
-  return {
-    current: singlePage[index],
-    previous: singlePage[index - 1],
-    next: singlePage[index + 1]
-  };
-};

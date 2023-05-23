@@ -10,7 +10,7 @@ import audio from "/audio/nov-2023.mp3";
 const Nov2023 = () => {
   const navigate = useNavigate();
   return (
-    <div className='pb-20 text-center bg-no-repeat bg-cover bg-xs-home sm:px-20'>
+    <div className='pb-6 text-center bg-no-repeat bg-cover bg-xxs-bg sm:px-20'>
       <div className='xl:pt-[300px] pt-[48.88px] text-center'>
         <img className='w-[96px] mx-auto' src='mobile/safex_white.png' alt='' />
 
@@ -19,7 +19,7 @@ const Nov2023 = () => {
           to soothe your senses
         </p>
       </div>
-      <div className='flex justify-center pt-6 space-x-2'>
+      <div className='flex justify-center py-6 space-x-2'>
         <button onClick={() => navigate("/home")} className='flex-0'>
           <AiOutlineLeft color='#FDFDFD' size={30} className='font-bold' />
         </button>
@@ -34,9 +34,9 @@ const Nov2023 = () => {
         </button>
       </div>
 
-      <div className='flex justify-center pb-10 px-[30px] space-x-2'>
+      <div className='flex justify-center pb-6 px-[30px] space-x-2'>
         <span></span>
-        <CalenderShot dates='dates/nov-2023.png' />
+        <CalenderShot dates='dates/nov2023.png' />
         <span></span>
       </div>
       <ShowAll />
@@ -86,3 +86,71 @@ export default Nov2023;
           </button>
         </div>
         */
+
+/*
+        <div className='pb-20 text-center bg-no-repeat bg-cover bg-xxs-bg sm:px-20'>
+      <div className='xl:pt-[300px] pt-[48.88px] text-center'>
+        <img className='w-[96px] mx-auto' src='mobile/safex_white.png' alt='' />
+
+        <MonthTitle title='November 2024' />
+        <p className='text-[12px] uppercase tracking-[1.2px] text-white font-["Helvetica_Neue_Medium"]'>
+          to soothe your senses
+        </p>
+      </div>
+      <div className='flex justify-center py-6 space-x-2'>
+        <button onClick={() => navigate("/oct")} className='flex-0'>
+          <AiOutlineLeft color='#FDFDFD' size={30} className='font-bold' />
+        </button>
+        <BirdCard
+          birdImage={"/mobile/mobile-birds/nov.png"}
+          birdName='Orange Minivet'
+          artist='Recorded by Vir Joshi'
+          song={audio}
+        />
+        <button onClick={() => navigate("/dec")} className='flex-0'>
+          <AiOutlineRight color='#FDFDFD' size={30} />
+        </button>
+      </div>
+
+      <div className='flex justify-center pb-10 px-[30px] space-x-2'>
+        <span></span>
+        <CalenderShot dates='dates/nov.png' />
+        <span></span>
+      </div>
+      <ShowAll />
+    </div>
+    */
+
+/*
+    <div className='pb-20 text-center bg-no-repeat bg-cover bg-xxs-bg sm:px-20'>
+      <div className='xl:pt-[300px] pt-[48.88px] text-center'>
+        <img className='w-[96px] mx-auto' src='mobile/safex_white.png' alt='' />
+
+        <MonthTitle title='November 2023' />
+        <p className='text-[12px] uppercase tracking-[1.2px] text-white font-["Helvetica_Neue_Medium"]'>
+          to soothe your senses
+        </p>
+      </div>
+      <div className='flex justify-center pt-6 space-x-2'>
+        <button onClick={() => navigate("/home")} className='flex-0'>
+          <AiOutlineLeft color='#FDFDFD' size={30} className='font-bold' />
+        </button>
+        <BirdCard
+          birdImage={"/mobile/mobile-birds/nov-2023.png"}
+          birdName='Indian Paradise Fly Catcher'
+          song={audio}
+          artist='Recorded by Conrad Pinto'
+        />
+        <button onClick={() => navigate("/dec2023")} className='flex-0'>
+          <AiOutlineRight color='#FDFDFD' size={30} />
+        </button>
+      </div>
+
+      <div className='flex justify-center pb-10 px-[30px] space-x-2'>
+        <span></span>
+        <CalenderShot dates='dates/nov-2023.png' />
+        <span></span>
+      </div>
+      <ShowAll />
+    </div>
+    */

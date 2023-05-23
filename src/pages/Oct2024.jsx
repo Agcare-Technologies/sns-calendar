@@ -10,7 +10,7 @@ import audio from "/audio/oct.mp3";
 const Oct2024 = () => {
   const navigate = useNavigate();
   return (
-    <div className='pb-20 text-center bg-no-repeat bg-cover bg-xs-home sm:px-20'>
+    <div className='pb-6 text-center bg-no-repeat bg-cover bg-xxs-bg sm:px-20'>
       <div className='xl:pt-[300px] pt-[48.88px] text-center'>
         <img className='w-[96px] mx-auto' src='mobile/safex_white.png' alt='' />
 
@@ -34,7 +34,7 @@ const Oct2024 = () => {
         </button>
       </div>
 
-      <div className='flex justify-center pb-10 px-[30px] space-x-2'>
+      <div className='flex justify-center pb-6 px-[30px] space-x-2'>
         <span></span>
         <CalenderShot dates='dates/oct.png' />
         <span></span>
