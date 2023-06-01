@@ -12,24 +12,26 @@ const Footer = () => {
         </div>
         <div>
           <div className='flex space-x-1'>
-            <a href=''>
+            <a href='https://www.facebook.com/safexchemicals/'>
               <ImFacebook size={20} className='p-1 m-1 bg-white rounded-md' />
             </a>
-            <a href=''>
+            <a href='https://in.linkedin.com/company/safexchemicals'>
               <RiLinkedinFill
                 size={20}
                 className='p-1 m-1 bg-white rounded-md'
               />
             </a>
-            <a href=''>
+            <a href='https://www.youtube.com/c/safexchemicalsindialtd'>
               <FaYoutube size={20} className='p-1 m-1 bg-white rounded-md' />
             </a>
           </div>
         </div>
       </div>
       <div className='text-[25px] sm:flex justify-between hidden  text-white font-["TIMES_NEW_ROMAN"] space-y-2'>
-        <p className=''>VISIT OUR WEBSITE</p>
-        <p className=''>FOLLOW US AT</p>
+        <a href='https://safexchemicals.com/'>
+          <p className=''>VISIT OUR WEBSITE</p>
+          <p className=''>FOLLOW US AT</p>
+        </a>
       </div>
     </div>
   );
