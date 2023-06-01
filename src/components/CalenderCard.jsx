@@ -12,7 +12,7 @@ const CalenderCard = ({ month }) => {
       className='flex items-center justify-center 2xl:w-[1042px] 2xl:h-[300px]'
     >
       <LazyLoadImage
-        className='w-full h-24 sm:h-40 sm:hidden'
+        className='w-full sm:h-40 sm:hidden'
         src={month.sm}
         alt=''
         loading='lazy'

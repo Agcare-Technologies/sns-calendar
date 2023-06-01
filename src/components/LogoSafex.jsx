@@ -1,7 +1,22 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import cn from "classnames";
 
-const LogoSafex = () => {
-  <img className='w-40 h-40' src='/mobile/safex_white.png' alt='Safex LOGO' />;
+const LogoSafex = ({ size }) => {
+  const navigate = useNavigate();
+  const sizeclasses = cn("mx-auto", {
+    "w-[110px]": size === "big",
+    "w-[91px]": size === "small",
+  });
+  return (
+    <div onClick={() => navigate("/home")}>
+      <img
+        className={sizeclasses}
+        src='/mobile/safex_white.png'
+        alt='Safex LOGO'
+      />
+    </div>
+  );
 };
 
 export default LogoSafex;

@@ -4,8 +4,8 @@ export const months = [
     month: "November",
     path: "/nov2023",
     title: "November 2023",
-    sm:'/mobile/Group 413-nov.jpg',
-    xl:'/desktop/nov2023.jpg',
+    sm:'/mobile/nov23.png',
+    xl:'/desktop/nov2023.png',
     audio: '/audio/audio.mp3'
     
   },
@@ -14,7 +14,7 @@ export const months = [
     month: "December",
     path: "/dec2023",
     title: "December 2023",
-    sm:'/mobile/Group 412-dec.jpg',
+    sm:'/mobile/dec23.png',
     xl:'/desktop/dec2023.jpg',
   },
   {
@@ -22,7 +22,7 @@ export const months = [
     month: "January",
     path: "/jan",
     title: "January 2024",
-    sm:'/mobile/Group 411-jan.jpg',
+    sm:'/mobile/jan.png',
     xl:'/desktop/jan2024.jpg',
   },
   {
@@ -30,7 +30,7 @@ export const months = [
     month: "Febuary",
     path: "/feb",
     title: "Febuary 2024",
-    sm:'/mobile/Group 410-feb.jpg',
+    sm:'/mobile/feb.png',
     xl:'/desktop/feb2024.jpg',
 
   },
@@ -39,7 +39,7 @@ export const months = [
     month:'March',
     path:'/mar',
     title: "March 2024",
-    sm:'/mobile/Group 409-mar.jpg',
+    sm:'/mobile/mar.png',
     xl:'/desktop/mar2024.jpg',
   
    }, 
@@ -48,7 +48,7 @@ export const months = [
     month:'April',
     path:'/apr', 
     title: "April 2024", 
-    sm:'/mobile/Group 408-apr.jpg',
+    sm:'/mobile/apr.png',
     xl:'/desktop/april2024.jpg',
 
    }, 
@@ -57,7 +57,7 @@ export const months = [
     month:'May',
     path:'/may',
     title: "May 2024",
-    sm:'/mobile/Group 407-may.jpg',
+    sm:'/mobile/may.png',
     xl:'/desktop/may2024.jpg',
    
    },
@@ -66,7 +66,7 @@ export const months = [
     month:'June',
     path:'/jun',
     title: "June 2024",
-    sm:'/mobile/Group 406-june.jpg',
+    sm:'/mobile/jun.png',
     xl:'/desktop/june.jpg',
   
 
@@ -76,7 +76,7 @@ export const months = [
     month:'July',
     path:'/jul',
     title: "July 2024",
-    sm:'/mobile/Group 405-july.jpg',
+    sm:'/mobile/jul.png',
     xl:'/desktop/july2024.jpg',
 
    }, 
@@ -85,7 +85,7 @@ export const months = [
     month:'August',
     path:'/aug',
     title: "August 2024",
-    sm:'/mobile/Group 404-aug.jpg',
+    sm:'/mobile/aug.png',
     xl:'/desktop/august2024.jpg',
 
    }, 
@@ -94,7 +94,7 @@ export const months = [
     month:'September',
     path:'/sep',
     title: "September 2024",
-    sm:'/mobile/Group 403-sep.jpg',
+    sm:'/mobile/sep.png',
     xl:'/desktop/sep2024.jpg',
 
    },
@@ -103,7 +103,7 @@ export const months = [
     month:'October',
     path:'/oct',
     title: "October 2024",
-    sm:'/mobile/Group 402-oct.jpg',
+    sm:'/mobile/oct.png',
     xl:'/desktop/oct2024.jpg',
 
    },
@@ -112,7 +112,7 @@ export const months = [
     month: 'November',
     path: '/nov',
     title: "November 2024",
-    sm: '/mobile/Group 401-nov.jpg',
+    sm: '/mobile/nov.png',
     xl: '/desktop/nov2024.jpg',
 
    },
@@ -121,7 +121,7 @@ export const months = [
     month:'December',
     path:'/dec',
     title: "December 2024",
-    sm:'/mobile/Group 400-dec.jpg',
+    sm:'/mobile/dec.png',
     xl:'/desktop/dec2024.jpg',
 
    },
