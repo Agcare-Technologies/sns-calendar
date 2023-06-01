@@ -10,7 +10,6 @@ const AudioPlayer = ({ song }) => {
   const [play, { pause, duration, sound, stop }] = useSound(song, {
     volume: 1,
     loop: true,
-    autoplay: true,
   });
   const [seconds, setSeconds] = useState();
   const location = useLocation();
@@ -88,18 +87,17 @@ const AudioPlayer = ({ song }) => {
   return (
     <div ref={audioRef} className='items-center mx-auto text-center'>
       <div>
-        {isPlaying ? (
+        {!isPlaying ? (
           <button className='playButton' onClick={playingButton}>
             <IconContext.Provider value={{ size: "40px", color: "#28332B" }}>
-              <AiFillPauseCircle />
+              <AiFillPlayCircle />
             </IconContext.Provider>
           </button>
         ) : (
           <button className='playButton' onClick={playingButton}>
-            {" "}
             <IconContext.Provider value={{ size: "40px", color: "#28332B" }}>
-              <AiFillPlayCircle />{" "}
-            </IconContext.Provider>{" "}
+              <AiFillPauseCircle />
+            </IconContext.Provider>
           </button>
         )}
       </div>
