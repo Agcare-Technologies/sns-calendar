@@ -1,21 +1,19 @@
 import { useEffect, useState, useRef } from "react";
 import useSound from "use-sound"; // for handling the sound
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // icons for play and pause
-import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // icons for next and previous track
 import { IconContext } from "react-icons";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const AudioPlayer = ({ song }) => {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [play, { pause, duration, sound, stop }] = useSound(song, {
     volume: 1,
     loop: true,
+    autoplay: false,
   });
   const [seconds, setSeconds] = useState();
   const location = useLocation();
   useEffect(() => {
-    play();
-
     const handleRouteChange = () => {
       stop();
     };
