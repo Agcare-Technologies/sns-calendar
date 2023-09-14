@@ -16,7 +16,7 @@ const Oct2024 = () => {
       <div className='xl:pt-[300px] pt-[48.88px] text-center'>
         <LogoSafex size='small' />
 
-        <MonthTitle title='October 2023' />
+        <MonthTitle title='October 2024' />
         <SootheSensesPara use='month' />
       </div>
       <div className='flex justify-center py-6 space-x-2'>
