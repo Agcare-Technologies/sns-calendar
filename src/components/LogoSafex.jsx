@@ -5,8 +5,11 @@ import cn from "classnames";
 const LogoSafex = ({ size }) => {
   const navigate = useNavigate();
   const sizeclasses = cn("mx-auto", {
-    "w-[110px]": size === "big",
-    "w-[91px]": size === "small",
+    "w-[110px] sm:hidden": size === "big",
+    "w-[91px] sm:hidden": size === "small",
+    "w-[229px] hidden sm:block": size === "desktopHome",
+    "w-[204px] hidden sm:block": size === "desktopFooter",
+    "w-[72px] block sm:hidden": size === "mobileFooter",
   });
   return (
     <div onClick={() => navigate("/home")}>

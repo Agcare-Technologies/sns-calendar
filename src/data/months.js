@@ -5,7 +5,7 @@ export const months = [
     path: "/nov2023",
     title: "November 2023",
     sm:'/mobile/nov23.png',
-    xl:'/desktop/nov2023.png',
+    xl:'/desktop/cards/nov23.png',
     audio: '/audio/audio.mp3'
     
   },
@@ -15,7 +15,7 @@ export const months = [
     path: "/dec2023",
     title: "December 2023",
     sm:'/mobile/dec23.png',
-    xl:'/desktop/dec2023.jpg',
+    xl:'/desktop/cards/dec23.png',
   },
   {
     id: "jan",
@@ -23,7 +23,7 @@ export const months = [
     path: "/jan",
     title: "January 2024",
     sm:'/mobile/jan.png',
-    xl:'/desktop/jan2024.jpg',
+     xl:'/desktop/cards/jan.png',
   },
   {
     id: "feb",
@@ -31,7 +31,7 @@ export const months = [
     path: "/feb",
     title: "Febuary 2024",
     sm:'/mobile/feb.png',
-    xl:'/desktop/feb2024.jpg',
+    xl:'/desktop/cards/feb.png',
 
   },
   {
@@ -40,7 +40,7 @@ export const months = [
     path:'/mar',
     title: "March 2024",
     sm:'/mobile/mar.png',
-    xl:'/desktop/mar2024.jpg',
+    xl:'/desktop/cards/mar.png',
   
    }, 
    {
@@ -49,7 +49,7 @@ export const months = [
     path:'/apr', 
     title: "April 2024", 
     sm:'/mobile/apr.png',
-    xl:'/desktop/april2024.jpg',
+    xl:'/desktop/cards/apr.png',
 
    }, 
    {
@@ -58,7 +58,7 @@ export const months = [
     path:'/may',
     title: "May 2024",
     sm:'/mobile/may.png',
-    xl:'/desktop/may2024.jpg',
+    xl:'/desktop/cards/may.png',
    
    },
    {
@@ -67,7 +67,7 @@ export const months = [
     path:'/jun',
     title: "June 2024",
     sm:'/mobile/jun.png',
-    xl:'/desktop/june.jpg',
+    xl:'/desktop/cards/jun.png',
   
 
    },
@@ -77,7 +77,7 @@ export const months = [
     path:'/jul',
     title: "July 2024",
     sm:'/mobile/jul.png',
-    xl:'/desktop/july2024.jpg',
+    xl:'/desktop/cards/jul.png',
 
    }, 
    {
@@ -86,7 +86,7 @@ export const months = [
     path:'/aug',
     title: "August 2024",
     sm:'/mobile/aug.png',
-    xl:'/desktop/august2024.jpg',
+    xl:'/desktop/cards/aug.png',
 
    }, 
    {
@@ -95,7 +95,7 @@ export const months = [
     path:'/sep',
     title: "September 2024",
     sm:'/mobile/sep.png',
-    xl:'/desktop/sep2024.jpg',
+    xl:'/desktop/cards/sep.png',
 
    },
    {
@@ -104,7 +104,7 @@ export const months = [
     path:'/oct',
     title: "October 2024",
     sm:'/mobile/oct.png',
-    xl:'/desktop/oct2024.jpg',
+    xl:'/desktop/cards/oct.png',
 
    },
    {
@@ -113,7 +113,7 @@ export const months = [
     path: '/nov',
     title: "November 2024",
     sm: '/mobile/nov.png',
-    xl: '/desktop/nov2024.jpg',
+    xl: '/desktop/cards/nov.png',
 
    },
    {
@@ -122,7 +122,7 @@ export const months = [
     path:'/dec',
     title: "December 2024",
     sm:'/mobile/dec.png',
-    xl:'/desktop/dec2024.jpg',
+    xl:'/desktop/cards/dec.png',
 
    },
 

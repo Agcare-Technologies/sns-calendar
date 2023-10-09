@@ -12,9 +12,10 @@ import SootheSensesPara from "../components/SootheSensesPara";
 const Apr2024 = () => {
   const navigate = useNavigate();
   return (
-    <div className='pb-6 text-center bg-no-repeat bg-cover bg-xxs-bg sm:px-20'>
-      <div className='xl:pt-[300px] pt-[48.88px] text-center'>
+    <div className='pb-6 text-center bg-no-repeat bg-cover bg-responsive sm:px-20'>
+      <div className='2xl:pt-[300px] xl:pt-[150px] pt-[48.88px] text-center'>
         <LogoSafex size='small' />
+        <LogoSafex size='desktopHome' />
 
         <MonthTitle title='April 2024' />
         <SootheSensesPara use='month' />
@@ -25,6 +26,7 @@ const Apr2024 = () => {
         </button>
         <BirdCard
           birdImage={"/mobile/mobile-birds/apr.png"}
+          birdImageXL={"/desktop/birds/apr.png"}
           birdName='Fired Tailed Myzornis'
           artist='Recorded by Jelle Scharringa'
           song={audio}
@@ -36,7 +38,7 @@ const Apr2024 = () => {
 
       <div className='flex justify-center pb-6 px-[30px] space-x-2'>
         <span></span>
-        <CalenderShot dates='/dates/apr.png' />
+        <CalenderShot dates='/dates/apr.png' xlDates='/desktop/dates/apr.png' />
         <span></span>
       </div>
       <ShowAll />

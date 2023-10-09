@@ -9,7 +9,7 @@ const CalenderCard = ({ month }) => {
   return (
     <div
       onClick={() => navigate(month.path)}
-      className='flex items-center justify-center 2xl:w-[1042px] 2xl:h-[300px]'
+      className='flex items-center justify-center 2xl:w-[1042px]'
     >
       <LazyLoadImage
         className='w-full sm:h-40 sm:hidden'
@@ -19,7 +19,7 @@ const CalenderCard = ({ month }) => {
         effect='blur'
       />
       <LazyLoadImage
-        className='hidden 2xl:w-[1042px] 2xl:h-[300px] sm:block'
+        className='hidden w-full sm:block'
         src={month.xl}
         alt=''
         loading='lazy'
