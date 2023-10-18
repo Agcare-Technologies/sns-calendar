@@ -6,7 +6,7 @@ const SootheSensesPara = ({ use }) => {
       use === "home",
     "text-[122px] text-white font-['Times_New_Roman'] hidden sm:block":
       use === "desktopHome",
-    "text-[12px] uppercase tracking-[1.2px] text-white font-['Helvetica_Neue_Medium']":
+    "text-[12px] uppercase tracking-[1.2px] sm:hidden text-white font-['Helvetica_Neue_Medium']":
       use === "month",
   });
   return (

@@ -15,7 +15,7 @@ const BirdCard = ({ birdImage, song, birdName, artist, birdImageXL }) => {
           loading='lazy'
         />
         <LazyLoadImage
-          className='hidden sm:block max-h-[1192px] xl:h-[800px] 2xl:h-[900px] z-50 bg-contain opacity-100 bg-inherit'
+          className='hidden sm:block max-h-[800px] xl:h-[600px] 2xl:h-[800px] z-50 bg-contain opacity-100 bg-inherit'
           src={birdImageXL}
           alt=''
           loading='lazy'

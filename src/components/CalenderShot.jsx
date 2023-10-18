@@ -4,7 +4,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const CalenderShot = ({ dates, xlDates }) => {
   return (
-    <div className='w-full '>
+    <div className='w-full backdrop-filter bg-opacity-30'>
       <LazyLoadImage className='sm:hidden' effect='blur' src={dates} alt='' />
       <LazyLoadImage
         className='hidden sm:block'

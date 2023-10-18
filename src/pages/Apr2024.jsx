@@ -32,7 +32,11 @@ const Apr2024 = () => {
           song={audio}
         />
         <button onClick={() => navigate("/may")} className='flex-0'>
-          <AiOutlineRight color='#FDFDFD' size={30} />
+          <AiOutlineRight
+            color='#FDFDFD'
+            size={30}
+            className='font-bold xl:text-[60px]'
+          />
         </button>
       </div>
 
