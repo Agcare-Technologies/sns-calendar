@@ -19,7 +19,7 @@ const CalenderCard = ({ month }) => {
         effect='blur'
       />
       <LazyLoadImage
-        className='hidden w-full sm:block h-[250px]'
+        className='hidden w-full sm:block'
         src={month.xl}
         alt=''
         loading='lazy'
