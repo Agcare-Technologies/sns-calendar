@@ -7,7 +7,10 @@ import LogoSafex from "../components/LogoSafex";
 
 const HomePage = () => {
   return (
-    <div className='sm:px-[50px] md:px-[100px] bg-responsive bg-cover px-10'>
+    <div
+      loading='lazy'
+      className='sm:px-[50px] md:px-[100px] bg-responsive bg-cover px-10'
+    >
       <div className=''>
         <div className='xl:pt-[180px] 2xl:pt-[256px] pt-[64px] text-center space-y-1'>
           <LogoSafex size='small' />
