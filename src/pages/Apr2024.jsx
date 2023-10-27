@@ -23,7 +23,7 @@ const Apr2024 = () => {
           <AiOutlineLeft color='#FDFDFD' size={30} className='font-bold' />
         </button>
         <BirdCard
-          birdImage={"/mobile/mobile-birds/apr.png"}
+          birdImage={"/mobile2/apr.png"}
           birdImageXL={"/desktop/birds/apr.png"}
           birdName='Fired Tailed Myzornis'
           artist='Recorded by Jelle Scharringa'

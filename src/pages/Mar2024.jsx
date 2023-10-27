@@ -24,7 +24,7 @@ const Mar2024 = () => {
           <AiOutlineLeft color='#FDFDFD' size={30} className='font-bold' />
         </button>
         <BirdCard
-          birdImage={"/mobile/mobile-birds/mar.png"}
+          birdImage={"/mobile2/mar.png"}
           birdImageXL={"/desktop/birds/mar.png"}
           birdName='Indian Pitta'
           song={audio}

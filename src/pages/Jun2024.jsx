@@ -24,7 +24,7 @@ const Jun2024 = () => {
           <AiOutlineLeft color='#FDFDFD' size={30} className='font-bold' />
         </button>
         <BirdCard
-          birdImage={"/mobile/mobile-birds/jun.png"}
+          birdImage={"/mobile2/jun.png"}
           birdImageXL={"/desktop/birds/jun.png"}
           birdName='Flame Throated Bulbul'
           artist='Recorded by Jishnu Kizhakkillam'
