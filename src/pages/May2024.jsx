@@ -15,7 +15,6 @@ const May2024 = () => {
     <div className='pb-6 text-center bg-no-repeat bg-cover bg-responsive sm:px-20'>
       <div className='2xl:pt-[300px] xl:pt-[150px] pt-[48.88px] text-center'>
         <LogoSafex size='small' />
-        <LogoSafex size='desktopHome' />
 
         <MonthTitle title='May 2024' />
         <SootheSensesPara use='month' />

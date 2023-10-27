@@ -9,15 +9,12 @@ const HomePage = () => {
   return (
     <div className='sm:px-[50px] md:px-[100px] bg-responsive bg-cover px-10'>
       <div className=''>
-        <div className='xl:pt-[180px] 2xl:pt-[256px] text-center space-y-1'>
-          <LogoSafex size='big' />
-          <LogoSafex size='desktopHome' />
+        <div className='xl:pt-[180px] 2xl:pt-[256px] pt-[64px] text-center space-y-1'>
+          <LogoSafex size='small' />
+
           <SootheSensesPara use='home' />
-          <SootheSensesPara use='desktopHome' />
+
           <p className='text-white text-[11.2px] sm:hidden uppercase font-medium tracking-[1.12px] font-["Helvetica_Neue_Medium"] '>
-            CALENDAR NOVEMBER 2023 - DECEMBER 2024
-          </p>
-          <p className='text-white text-[30px] hidden sm:block uppercase font-medium tracking-[3px] font-["Helvetica_Neue_Medium"] '>
             CALENDAR NOVEMBER 2023 - DECEMBER 2024
           </p>
         </div>
