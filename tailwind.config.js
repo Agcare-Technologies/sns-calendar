@@ -34,9 +34,9 @@ module.exports = {
       const newUtilities = {};
       newUtilities[".bg-responsive"] = {
         '@screen sm': {
-          backgroundImage: 'url("/tablet/bg-tablet.jpg")', // Use xxl-bg for small screens
+          backgroundImage: 'url("/mobile/small-bg.png")', // Use xxl-bg for small screens
         },
-        backgroundImage: 'url("/desktop/bg-desktop.jpg")', // Use xl-home for other screens
+        backgroundImage: 'url("/mobile/small-bg.png")', // Use xl-home for other screens
       };
       addUtilities(newUtilities, ['responsive', 'hover']); // Enable responsive and hover variants
     },
