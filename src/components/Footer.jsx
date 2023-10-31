@@ -14,16 +14,16 @@ const Footer = () => {
         </div>
         <div>
           <div className='flex space-x-1'>
-            <a href='https://www.facebook.com/safexchemicals/'>
+            <a href='https://www.facebook.com/smithnsmithchemicals/'>
               <ImFacebook size={20} className='p-1 m-1 bg-white rounded-md' />
             </a>
-            <a href='https://in.linkedin.com/company/safexchemicals'>
+            <a href='https://in.linkedin.com/company/smith-n-smith-chemicals-limited'>
               <RiLinkedinFill
                 size={20}
                 className='p-1 m-1 bg-white rounded-md'
               />
             </a>
-            <a href='https://www.youtube.com/c/safexchemicalsindialtd'>
+            <a href='https://www.youtube.com/channel/UCMqyfZUGm_3lSo4GSaaxapA'>
               <FaYoutube size={20} className='p-1 m-1 bg-white rounded-md' />
             </a>
           </div>
@@ -38,24 +38,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-/*
-<div className='flex justify-between'>
-        <div className=''>
-          <LogoSafex />
-          <p className='text-[25px] text-white font-["TIMES_NEW_ROMAN"]'>
-            VISIT OUR WEBSITE
-          </p>
-        </div>
-        <div>
-          <div className='flex'>
-            <ImFacebook size={45} />
-            <RiLinkedinFill size={45} />
-            <FaYoutube size={45} />
-          </div>
-          <p className='text-[25px] text-white font-["TIMES_NEW_ROMAN"]'>
-            FOLLOW US AT
-          </p>
-        </div>
-      </div>
-      */
